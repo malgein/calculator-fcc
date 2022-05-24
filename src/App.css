@@ -1,38 +1,112 @@
-.App {
-  text-align: center;
+
+*{
+	margin: 0;
+	padding: 0;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+.title{
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  text-align: center;
+  margin-top: 25px;
+  margin-bottom: 25px;
 }
 
-.App-link {
-  color: #61dafb;
+.react-logo{
+	position: absolute;
+  height: 40px;
+  margin-top: 3px;
+  margin-right:  200px;
+	margin-left: -250px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.calculator{
+	position: relative;
+	margin: 0 auto;
+	width: 420px;
+	height: 680px;
+	border: 10px solid blue;
+	border-radius: 40px;
+	background-color: #292f36;  
+	box-shadow: 0 19px 38px rgba(19, 19, 19, .24),
+0 15px 12px rgba(19, 19, 19, .12);
+}
+
+.output{
+	height: 160px;
+}
+
+.input,
+.result{
+	display: block;
+	position: relative;
+  width: 420px;
+  height: 80px;
+  padding: 8px;
+  overflow: hidden;
+  background-color: rgba(19, 19, 19, .64);
+  font-size: 32px;
+  line-height: 2;
+  color: #60d63c;
+  white-space: nowrap;
+  box-sizing: border-box;
+  
+}
+
+.result{
+	border-top-left-radius: 20px;
+	border-top-right-radius: 20px;
+}
+
+button{
+		display: block;
+    position: relative;
+    width: 80px;
+    height: 80px;
+    float: left;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 25px;
+    margin: 10px;
+    font-size: 30px;
+    background-color: gray;
+    color: blue;
+    border-radius: 20px;
+    border: 3px solid black;
+    cursor: point;
+}
+
+button:hover{
+	background-color: black;
+}
+
+.keys button:nth-child(1) {
+	background-color: white;
+	text-align: center;
+	justify-content: center;
+	padding-right: 150px;
+}
+
+.keys button:nth-child(1):hover{
+	background-color: purple;
+}
+
+.keys button:nth-child(15){
+	background-color: darkgreen;
+	text-align: center;
+	justify-content: center;
+	padding-bottom: 150px;
+}
+.keys button:nth-child(15):hover{
+	background-color:darkslategray;
+}
+
+.keys button:nth-child(16){
+	position: absolute;
+	margin: 400px 10px;
+}
+
+.keys button:nth-child(17){
+	position: absolute;
+	margin: 400px 110px;
 }
